@@ -30,17 +30,22 @@ The tool can be run with the following self explainatory arguments:
 where number of threads can be chosen by you. The number of cores of the machine
 is a good guess.
 
-The input file has to be formatted as a tabulator seperated file (tsv). 
+The **input file** has to be formatted as a tabulator seperated file (tsv). 
 The first column of the file is omitted and can hold sample names.
 Each succeding column holds a feature ( floating point value ) describing the sample
-Each row holds the information about one sample. 
+Each row holds the information about one sample. *The input file requires at least
+4 samples to yield correct results!* 
+
 Here's an example:
 ```
-feature1        1.5     10.2    .4
-feature2        2.4     21.9    1.0
-feature3        3.5     30.9    2.0
+sample1 1.5     10.2    .4      1.
+sample2 2.4     21.9    1.0     2.
+sample3 3.5     30.9    1.8     3.
+sample4 4.5     40.9    2.5     4.
+sample5 5.5     50.9    3.0     5.
 ```
-(beware that you cannot just copy paste this as it needs real tabulators not spaces)
+(Beware that you cannot just copy paste this as it needs real tabulators not spaces. If you 
+want to test this tool use the supplied test.tsv file. 
 
 The **"data projected onto principal components"** output file contains 
 the projections of each sample onto the principal components per row. 
@@ -53,3 +58,8 @@ princpal components
 
 The **"Eigenvectors** file holds number of dimensions eigenvectors corresponding
 to the largest eigenvalues.
+
+A sample usage with the supplied test file:
+``` 
+./pca test.tsv test.pca test.eval test.evec 2 1
+```
