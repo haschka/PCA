@@ -10,7 +10,7 @@ A perfect setting is 30 000 samples 4000 features, where on recent machine resul
 
 ### Requirements
 In order to compile and run this tools you need to have the lapack libraries,
-installed. Further you need a suitable compilier. On an ubuntu based system you may
+installed. Further you need a suitable compilier. On a Debian based system you may
 install all requirements in the following way:
 
 ```
