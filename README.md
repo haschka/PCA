@@ -36,10 +36,11 @@ Each succeding column holds a feature ( floating point value ) describing the sa
 Each row holds the information about one sample. 
 Here's an example:
 ```
-feature1  12.5  55.2  21.4
-feature2  22.4  78.9  11.1
-feature3  11.5  25.9  9.5
+feature1        1.5     10.2    .4
+feature2        2.4     21.9    1.0
+feature3        3.5     30.9    2.0
 ```
+(beware that you cannot just copy paste this as it needs real tabulators not spaces)
 
 The **"data projected onto principal components"** output file contains 
 the projections of each sample onto the principal components per row. 
