@@ -1,4 +1,8 @@
 # PCA
+
+(c) Thomas Haschka 2022 
+for a license please read the LICENSE (zlib license) file.
+
 A tool to perform fast principal component analyses with millions of samples and thousands of features:
 
 This tool works best (in termes of runtime) if samples >> features. But is not limited to such cases. It was tested with 2.5 millions of samples and up to around 16 000 features. 
